@@ -257,10 +257,15 @@ footer {
 }
 
 /* individual artists */
-.img-fluid { 
+.img-fluid {
     border-radius: 10px; /* border-radius to make images round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* shadow effect */
+    transition: box-shadow 0.3s ease; /* transition for smooth hover effect */
 }
 
+.img-fluid:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* shadow on hover */
+}
 .artist-info {
     position: absolute;
     bottom: 0;
@@ -292,16 +297,6 @@ footer {
 .like-button img {
     width: 30px;
     height: 30px;
-}
-
-.overlay {
-    position: absolute !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 35% !important;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    z-index: 1 !important;
 }
 
 .artist-row {
@@ -600,11 +595,11 @@ footer {
 
 /* comment box around each comment */
 .comment-box {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
 .comment-content {
@@ -949,11 +944,11 @@ footer {
 
     /* comment area discussion-box */
     .discussion-box {
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #fff !important;
+        border-radius: 8px !important;
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     }
     
     .discussion-title {

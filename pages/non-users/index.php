@@ -154,7 +154,7 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
             <div class="row">
                 <div class="col-12 highlight-background">
                     <div class="highlight-content">
-                        <h2 class="section-title">Weekly highlights</h2>
+                        <h2 class="section-title">Weekly News</h2>
                         <a href="#" class="btn btn-outline-light btn-explore">Read</a>
                     </div>
                 </div>
