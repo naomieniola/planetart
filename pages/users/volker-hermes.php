@@ -143,7 +143,7 @@ session_regenerate_id(true);
             <div class="col medium-column-artists">
                 <div class="position-relative">
                     <a href="your_link_3">
-                        <img src="volker-hidden.png" class="img-fluid" style="width: 100%; height: 222px">
+                        <img src="volker.jpg" class="img-fluid" style="width: 100%; height: 222px">
                     </a>
                     <p class="bottom-left-text">Text 3</p>
                 </div>
@@ -151,7 +151,7 @@ session_regenerate_id(true);
             <div class="col medium-column-artists">
                 <div class="position-relative">
                     <a href="your_link_4">
-                        <img src="https://placeholder.com/300/303" class="img-fluid" style="width: 100%; height: 222px">
+                        <img src="volker.jpg" class="img-fluid" style="width: 100%; height: 222px">
                     </a>
                     <p class="bottom-left-text">Text 4</p>
                 </div>
@@ -159,7 +159,7 @@ session_regenerate_id(true);
             <div class="col medium-column-artists">
                 <div class="position-relative">
                     <a href="your_link_5">
-                        <img src="https://placeholder.com/300/304" class="img-fluid" style="width: 100%; height: 222px">
+                        <img src="volker.jpg" class="img-fluid" style="width: 100%; height: 222px">
                     </a>
                     <p class="bottom-left-text">Text 5</p>
                 </div>

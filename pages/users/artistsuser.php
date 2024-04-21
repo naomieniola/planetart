@@ -193,7 +193,7 @@ $stmt->close();
                 </div>
                 <div class="col medium-column">
                     <div class="position-relative">
-                        <a href="tylor.php">
+                        <a href="#">
                             <img src="/planetart/images/tylor1.jpg" class="img-fluid" style="width: 100%; height: 222px">
                         </a>
                         <div class="artist-info">
@@ -206,7 +206,7 @@ $stmt->close();
                 </div>
                 <div class="col medium-column">
                     <div class="position-relative">
-                        <a href="mark-ryden.php">
+                        <a href="#">
                             <img src="/planetart/images/mark.jpg" class="img-fluid" style="width: 100%; height: 222px">
                         </a>
                         <div class="artist-info">
@@ -217,26 +217,14 @@ $stmt->close();
                         </div>
                     </div>
                 </div>
-                <div class="col medium-column">
-                    <div class="position-relative">
-                        <a href=".php">
-                            <img src="/planetart/images/julian-alexander.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                        </a>
-                        <div class="artist-info">
-                            <p class="artist-name">Julian Adon Alexander</p>
-                            <button class="like-button<?php echo in_array(7, $likedItems) ? ' liked' : ''; ?>" data-id="7" data-name="Michelangelo">
-                                <img src="<?php echo in_array(7, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
             <!-- Second Row -->
             <div class="row mt-3">
                 <div class="col medium-column">
                     <div class="position-relative">
-                        <a href="Chas.php">
+                        <a href="#">
                             <img src="/planetart/images/chasbg.jpg" class="img-fluid" style="width: 100%; height: 222px">
                         </a>
                         <div class="artist-info">
@@ -249,7 +237,7 @@ $stmt->close();
                 </div>
                 <div class="col medium-column">
                     <div class="position-relative">
-                        <a href="raphael.php">
+                        <a href="#">
                             <img src="/planetart/images/lisbeth.jpg" class="img-fluid" style="width: 100%; height: 222px">
                         </a>
                         <div class="artist-info">
@@ -262,11 +250,11 @@ $stmt->close();
                 </div>
                 <div class="col medium-column">
                     <div class="position-relative">
-                        <a href="rembrandt.php">
-                            <img src="/planetart/images/rembrandt.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                        <a href="#">
+                            <img src="/planetart/images/landon.jpg" class="img-fluid" style="width: 100%; height: 222px">
                         </a>
                         <div class="artist-info">
-                            <p class="artist-name">Rembrandt</p>
+                            <p class="artist-name">Landon Khiry</p>
                             <button class="like-button<?php echo in_array(10, $likedItems) ? ' liked' : ''; ?>" data-id="10" data-name="Rembrandt">
                                 <img src="<?php echo in_array(10, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
                             </button>
@@ -275,104 +263,76 @@ $stmt->close();
                 </div>
                 <div class="col medium-column">
                     <div class="position-relative">
-                        <a href="salvador-dali.php">
-                            <img src="/planetart/images/dali.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                        <a href="#">
+                            <img src="/planetart/images/schatzi.jpg" class="img-fluid" style="width: 100%; height: 222px">
                         </a>
                         <div class="artist-info">
-                            <p class="artist-name">Salvador Dali</p>
+                            <p class="artist-name">Schatzi</p>
                             <button class="like-button<?php echo in_array(11, $likedItems) ? ' liked' : ''; ?>" data-id="11" data-name="Salvador Dali">
                                 <img src="<?php echo in_array(11, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
                             </button>
                         </div>
                     </div>
                 </div>
+            </div>
 
+                <!-- Third Row -->
+            <div class="row mt-3">
                 <div class="col medium-column">
                     <div class="position-relative">
-                        <a href="claude-monet.php">
-                            <img src="/planetart/images/monet.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                        <a href="#">
+                            <img src="/planetart/images/soulo.jpg" class="img-fluid" style="width: 100%; height: 222px">
                         </a>
                         <div class="artist-info">
-                            <p class="artist-name">Claude Monet</p>
-                            <button class="like-button<?php echo in_array(12, $likedItems) ? ' liked' : ''; ?>" data-id="12" data-name="Claude Monet">
-                                <img src="<?php echo in_array(12, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
+                            <p class="artist-name">Soulo</p>
+                            <button class="like-button<?php echo in_array(13, $likedItems) ? ' liked' : ''; ?>" data-id="13" data-name="Johannes Vermeer">
+                                <img src="<?php echo in_array(13, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
                             </button>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Third Row -->
-        <div class="row mt-3">
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="johannes-vermeer.php">
-                        <img src="/planetart/images/vermeer.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Johannes Vermeer</p>
-                        <button class="like-button<?php echo in_array(13, $likedItems) ? ' liked' : ''; ?>" data-id="13" data-name="Johannes Vermeer">
-                            <img src="<?php echo in_array(13, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="caravaggio.php">
-                        <img src="/planetart/images/caravaggio.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Caravaggio</p>
-                        <button class="like-button<?php echo in_array(14, $likedItems) ? ' liked' : ''; ?>" data-id="14" data-name="Caravaggio">
-                            <img src="<?php echo in_array(14, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="johannes-vermeer.php">
-                        <img src="/planetart/images/vermeer2.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Johannes Vermeer</p>
-                        <button class="like-button<?php echo in_array(15, $likedItems) ? ' liked' : ''; ?>" data-id="15" data-name="Johannes Vermeer">
-                            <img src="<?php echo in_array(15, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="michelangelo.php">
-                        <img src="/planetart/images/michelangelo2.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Michelangelo</p>
-                        <button class="like-button<?php echo in_array(16, $likedItems) ? ' liked' : ''; ?>" data-id="16" data-name="Michelangelo">
-                            <img src="<?php echo in_array(16, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-
                 <div class="col medium-column">
                     <div class="position-relative">
-                        <a href="frida-kahlo.php">
-                            <img src="/planetart/images/kahlo.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                        <a href="#">
+                            <img src="/planetart/images/isaiah.jpg" class="img-fluid" style="width: 100%; height: 222px">
                         </a>
                         <div class="artist-info">
-                            <p class="artist-name">Frida Kahlo</p>
-                            <button class="like-button<?php echo in_array(17, $likedItems) ? ' liked' : ''; ?>" data-id="17" data-name="Frida Kahlo">
-                                <img src="<?php echo in_array(17, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
+                            <p class="artist-name">Isaiah</p>
+                            <button class="like-button<?php echo in_array(14, $likedItems) ? ' liked' : ''; ?>" data-id="14" data-name="Caravaggio">
+                                <img src="<?php echo in_array(14, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
                             </button>
                         </div>
                     </div>
+                </div>
+                <div class="col medium-column">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="/planetart/images/helen-katherine.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                        </a>
+                        <div class="artist-info">
+                            <p class="artist-name">Helen Katherine</p>
+                            <button class="like-button<?php echo in_array(15, $likedItems) ? ' liked' : ''; ?>" data-id="15" data-name="Johannes Vermeer">
+                                <img src="<?php echo in_array(15, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col medium-column">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="/planetart/images/gabe-weis.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                        </a>
+                        <div class="artist-info">
+                            <p class="artist-name">Gabe Weis</p>
+                            <button class="like-button<?php echo in_array(16, $likedItems) ? ' liked' : ''; ?>" data-id="16" data-name="Michelangelo">
+                                <img src="<?php echo in_array(16, $likedItems) ? '/planetart/images/like.png' : '/planetart/images/unlike.png'; ?>" alt="Like">
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
-     </div>
 
     <!-- Footer -->
     <footer class="text-center">

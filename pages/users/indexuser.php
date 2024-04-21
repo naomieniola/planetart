@@ -132,7 +132,7 @@ session_regenerate_id(true);
                         <div class="card-content">
                             <h5>Artists</h5>
                             <p>Explore a vast collection of paintings, drawings and sketches from various artists and styles.</p>
-                            <a href="artists.php" class="btn btn-outline-light btn-explore">Explore</a>
+                            <a href="artistsuser.php" class="btn btn-outline-light btn-explore">Explore</a>
                         </div>
                     </div>
                 </div>
