@@ -208,96 +208,95 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
     </div>
 
     <div class="container-fluid" style="position: relative; height: 100vh;">
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/planetart/images/mark-ps.png'); background-size: 100% auto; background-position: center; background-repeat: no-repeat; opacity: 1; z-index: -1;"></div>
-  <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <div class="card" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);">
-                <div class="card-body">
-                            <form action="signup.php" method="post">
-                                <?php
-                                if (isset($errors) && count($errors) > 0) {
-                                    echo '<div class="alert alert-danger">';
-                                    foreach ($errors as $error) {
-                                        echo '<p>' . $error . '</p>';
-                                    }
-                                    echo '</div>';
-                                }
-                                ?>
-                                <div class="row mb-3">
-                                    <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label">Email <span class="required-asterisk">*</span></label>
-                                        <input type="email" class="form-control" id="email" name="email">
-                                    </div>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/planetart/images/mark-ps.png'); background-size: 100% auto; background-position: center; background-repeat: no-repeat; opacity: 1; z-index: -1;"></div>
+            <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);">
+                            <div class="card-body">
+                                        <form action="signup.php" method="post">
+                                            <?php
+                                            if (isset($errors) && count($errors) > 0) {
+                                                echo '<div class="alert alert-danger">';
+                                                foreach ($errors as $error) {
+                                                    echo '<p>' . $error . '</p>';
+                                                }
+                                                echo '</div>';
+                                            }
+                                            ?>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6 mb-3">
+                                                <label for="email" class="form-label">Email <span class="required-asterisk">*</span></label>
+                                                    <input type="email" class="form-control" id="email" name="email">
+                                                </div>
 
-                                    <div class="col-md-6 mb-3">
-                                        <label for="fullname" class="form-label">Full Name <span class="required-asterisk">*</span></label>
-                                        <input type="text" class="form-control" id="fullname" name="fullname">
-                                    </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="fullname" class="form-label">Full Name <span class="required-asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="fullname" name="fullname">
+                                                </div>
 
-                                    <div class="col-md-6 mb-3">
-                                        <label for="username" class="form-label">Username <span class="required-asterisk">*</span></label>
-                                        <input type="text" class="form-control" id="username" name="username">
-                                    </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="username" class="form-label">Username <span class="required-asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="username" name="username">
+                                                </div>
 
-                                    <div class="col-md-6 mb-3">
-                                        <label for="password" class="form-label">Password <span class="required-asterisk">*</span></label>
-                                        <input type="password" class="form-control" id="password" name="password">
-                                    </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="password" class="form-label">Password <span class="required-asterisk">*</span></label>
+                                                    <input type="password" class="form-control" id="password" name="password">
+                                                </div>
 
-                                    <div class="col-md-12 mb-3">
-                                        <label for="dateofbirth" class="form-label">Date of Birth <span class="required-asterisk">*</span></label>
-                                        <div class="input-group">
-                                            <input type="number" class="form-control" id="dateofbirth_day" name="dateofbirth_day" placeholder="DD" min="1" max="31" required>
-                                            <select class="form-select" id="dateofbirth_month" name="dateofbirth_month" required>
-                                                <option value="">MMM</option>
-                                                <option value="1">Jan</option>
-                                                <option value="2">Feb</option>
-                                                <option value="3">Mar</option>
-                                                <option value="4">Apr</option>
-                                                <option value="5">May</option>
-                                                <option value="6">Jun</option>
-                                                <option value="7">Jul</option>
-                                                <option value="8">Aug</option>
-                                                <option value="9">Sep</option>
-                                                <option value="10">Oct</option>
-                                                <option value="11">Nov</option>
-                                                <option value="12">Dec</option>
-                                            </select>
-                                            <input type="number" class="form-control" id="dateofbirth_year" name="dateofbirth_year" placeholder="YYYY" min="1900" max="2100" required>
-                                        </div>
-                                    </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="dateofbirth" class="form-label">Date of Birth <span class="required-asterisk">*</span></label>
+                                                    <div class="input-group">
+                                                        <input type="number" class="form-control" id="dateofbirth_day" name="dateofbirth_day" placeholder="DD" min="1" max="31" required>
+                                                        <select class="form-select" id="dateofbirth_month" name="dateofbirth_month" required>
+                                                            <option value="">MMM</option>
+                                                            <option value="1">Jan</option>
+                                                            <option value="2">Feb</option>
+                                                            <option value="3">Mar</option>
+                                                            <option value="4">Apr</option>
+                                                            <option value="5">May</option>
+                                                            <option value="6">Jun</option>
+                                                            <option value="7">Jul</option>
+                                                            <option value="8">Aug</option>
+                                                            <option value="9">Sep</option>
+                                                            <option value="10">Oct</option>
+                                                            <option value="11">Nov</option>
+                                                            <option value="12">Dec</option>
+                                                        </select>
+                                                        <input type="number" class="form-control" id="dateofbirth_year" name="dateofbirth_year" placeholder="YYYY" min="1900" max="2100" required>
+                                                    </div>
+                                                </div>
 
-                                    <div class="mb-3">
-                                        <p>By signing up, you agree to our <a href="privacy-policy.php" target="_blank" class="privacy-policy-link">Privacy Policy</a>. Please make sure to read it before proceeding.</p>
-                                    </div>
+                                                <div class="mb-3">
+                                                    <p>By signing up, you agree to our <a href="privacy-policy.php" target="_blank" class="privacy-policy-link">Privacy Policy</a>. Please make sure to read it before proceeding.</p>
+                                                </div>
 
-                                    <div class="d-grid">
-                                        <button type="submit" class="btn btn-outline-primary login w-100" name="submit">Sign-up</button>
-                                    </div>
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-outline-primary login w-100" name="submit">Sign-up</button>
+                                                </div>
 
-                                    <div class="text-center mt-3">
-                                        <p>Already have an account? <a href="login.php" class="signup-text">Login</a></p>
+                                                <div class="text-center mt-3">
+                                                    <p>Already have an account? <a href="login.php" class="signup-text">Login</a></p>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </div>
         
-  <!-- Footer -->
-  <footer class="text-center">
-        <!-- Copyright -->
-        <div class="footer p-3">
-            © 2024
-            <a>Planet Art</a>
-            <a href="privacy-policy.php" class="privacy-policy-link">Privacy Policy</a>
-        </div>
-        <!-- Copyright -->
-  </footer>
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer p-3">
+                © 2024
+                <a>Planet Art</a>
+                <a href="privacy-policy.php" class="privacy-policy-link">Privacy Policy</a>
+            </div>
+        </footer>
+
 
     <!-- Bootstrap js and popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

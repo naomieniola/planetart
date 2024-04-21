@@ -151,8 +151,8 @@ $stmt->close();
         ?>
     </header>
 
-     <!-- Main Content Container -->
-     <div class="background-colour">
+    <!-- Main Content Container -->
+    <div class="background-colour">
         <div class="container explore-desc">
                 <div class="row">
                     <div class="col-12">
@@ -376,12 +376,11 @@ $stmt->close();
 
     <!-- Footer -->
     <footer class="text-center">
-        <!-- Copyright -->
         <div class="footer p-3">
             © 2024
             <a>Planet Art</a>
+            <a href="privacy-policy.php" class="privacy-policy-link">Privacy Policy</a>
         </div>
-        <!-- Copyright -->
     </footer>
     
   <!-- Bootstrap js and popper.js -->

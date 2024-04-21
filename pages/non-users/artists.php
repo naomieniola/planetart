@@ -73,9 +73,8 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
                     </div>
                     </div>
                 </ul>
-    </nav>
-
-</header>
+            </nav>
+    </header>
 
     <!-- Main Content Container -->
         <div class="container explore-desc">
@@ -297,16 +296,14 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
         </div>
     </div>
     
-    
-    <!-- Footer -->
-    <footer class="text-center">
-        <!-- Copyright -->
-        <div class="footer p-3">
-            © 2024
-            <a>Planet Art</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer p-3">
+                © 2024
+                <a>Planet Art</a>
+                <a href="privacy-policy.php" class="privacy-policy-link">Privacy Policy</a>
+            </div>
+        </footer>
     
      <!-- Error Modal -->
      <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
@@ -343,7 +340,7 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
             var likeButton = $(this);
 
             <?php if (!isset($_SESSION["user"])) : ?>
-                // Show error message using Bootstrap modal
+                // Show error message using modal
                 var errorMessage = 'You need to be logged in to like artists. Redirecting to login page...';
                 $('#errorModal .modal-body').text(errorMessage);
                 $('#errorModal').modal('show');
@@ -351,7 +348,7 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
                     window.location.href = 'login.php';
                 }, 3000);
                     <?php else : ?>
-                        // Handle the like functionality for logged-in users
+                        // Like functionality for logged-in users
                         $.ajax({
                             url: '',
                             method: 'POST',

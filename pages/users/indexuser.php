@@ -107,7 +107,7 @@ session_regenerate_id(true);
             // Clear the "Remember Me" cookie
             setcookie("remember_token", "", time() - 3600, "/");
 
-            // Redirect the user to the login page or any other desired page
+            // Redirect the user to the login page
             header("Location: /planetart/pages/non-users/login.php");
             exit();
         }
@@ -290,11 +290,12 @@ session_regenerate_id(true);
         </div>
     </div>
 
-  <!-- Footer -->
-  <footer class="text-center">
+    <!-- Footer -->
+    <footer class="text-center">
         <div class="footer p-3">
             © 2024
             <a>Planet Art</a>
+            <a href="privacy-policy.php" class="privacy-policy-link">Privacy Policy</a>
         </div>
     </footer>
 

@@ -117,11 +117,11 @@ if (isset($_POST['startDiscussionButton'])) {
 
                 // Redirect or display a success message
             } else {
-                // Handle error in preparing the discussion statement
+                // Error in preparing the discussion statement
                 die("Error in preparing the discussion statement: " . mysqli_error($conn));
             }
         } else {
-            // Handle error in initialising the discussion statement
+            // Error in initialising the discussion statement
             die("Error in initialising the discussion statement: " . mysqli_error($conn));
         }
     }
@@ -149,11 +149,11 @@ if (isset($_POST['startDiscussionButton'])) {
         
                         // Redirect or display a success message as needed
                     } else {
-                        // Handle error in preparing the comment statement
+                        // Error in preparing the comment statement
                         die("Error in preparing the comment statement: " . mysqli_error($conn));
                     }
                 } else {
-                    // Handle error in initialising the comment statement
+                    // Error in initialising the comment statement
                     die("Error in initialising the comment statement: " . mysqli_error($conn));
                 }
             }
@@ -461,15 +461,15 @@ if (!empty($searchKeyword)) {
                                             echo '</div>';
                                         }
                                     } else {
-                                        // Handle error in preparing the fetch discussion statement
+                                        // Error in preparing the fetch discussion statement
                                         die("Error in preparing the fetch discussion statement: " . mysqli_error($conn));
                                     }
                                 } else {
-                                    // Handle error in initialising the fetch discussion statement
+                                    // Error in initialising the fetch discussion statement
                                     die("Error in initialising the fetch discussion statement: " . mysqli_error($conn));
                                 }
 
-                                // Fetch and display existing comments for the discussion
+                                // Fetch and display existing comments for the discussion in ascending order
                                 $sqlFetchComments = "SELECT c.*, u.profile_picture 
                                 FROM comments c
                                 JOIN users u ON c.user_fullname = u.full_name
@@ -662,11 +662,11 @@ if (!empty($searchKeyword)) {
                                     echo '</div></div>';
                                 }
                             } else {
-                                // Handle error in preparing the fetch discussions statement
+                                // Error in preparing the fetch discussions statement
                                 die("Error in preparing the fetch discussions statement: " . mysqli_error($conn));
                             }
                         } else {
-                            // Handle error in initializing the fetch discussions statement
+                            // Error in initializing the fetch discussions statement
                             die("Error in initializing the fetch discussions statement: " . mysqli_error($conn));
                         }
                         ?>
@@ -764,13 +764,14 @@ if (!empty($searchKeyword)) {
             });
             </script>
 
-        <!-- Footer -->
-        <footer class="text-center">
-            <div class="footer p-3">
-                © 2024
-                <a>Planet Art</a>
-            </div>
-        </footer>
+            <!-- Footer -->
+            <footer class="text-center">
+                <div class="footer p-3">
+                    © 2024
+                    <a>Planet Art</a>
+                    <a href="privacy-policy.php" class="privacy-policy-link">Privacy Policy</a>
+                </div>
+            </footer>
 
             <!-- Bootstrap js and popper.js -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

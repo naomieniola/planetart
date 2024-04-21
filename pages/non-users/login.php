@@ -11,7 +11,7 @@ session_start();
 if (isset($_COOKIE['remember_token'])) {
     $rememberToken = $_COOKIE['remember_token'];
 
-    // Query the database to find the user with the matching remember token
+    // Find the user with the matching remember token
     $sql = "SELECT * FROM users WHERE remember_token = '$rememberToken'";
     $result = mysqli_query($conn, $sql);
     $user = mysqli_fetch_assoc($result);
@@ -67,7 +67,7 @@ if (isset($_POST["login"])) {
             $_SESSION["user_id"] = $user["id"];
             $_SESSION["admin"] = ($user["admin"] == 1) ? 1 : 0;
         
-            // Handle "Remember Me" functionality
+            // "Remember Me" functionality
             if ($rememberMe) {
                 $rememberToken = bin2hex(random_bytes(32));
                 $expirationTime = time() + (86400 * 30); // 30 days in seconds
@@ -187,14 +187,12 @@ if (isset($_POST["login"])) {
     </div>
 </div>
     
-  <!-- Footer -->
-  <footer class="text-center">
-        <!-- Copyright -->
+    <!-- Footer -->
+    <footer class="text-center">
         <div class="footer p-3">
             © 2024
             <a>Planet Art</a>
         </div>
-        <!-- Copyright -->
     </footer>
 
     <!-- Bootstrap js and popper.js -->

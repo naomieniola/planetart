@@ -109,11 +109,11 @@ session_regenerate_id(true);
         <?php
         // Check if the logout action is triggered
         if (isset($_GET['logout']) && $_GET['logout'] == 1) {
-            // Perform logout actions here, e.g., destroy the session
+            //
             session_start(); // Ensure session is started
             session_destroy();
             
-            // Redirect the user to the login page or any other desired page
+            // Redirect the user to the login page after logging out successfully
             header("Location: /planetart/pages/non-users/login.php");
             exit();
         }
@@ -251,7 +251,7 @@ session_regenerate_id(true);
     </div>
 </div>
     <?php
-    // Handle admin assignment
+    // Admin assignment
     if (isset($_POST['assignAdminButton'])) {
         $userId = intval($_POST['userId']);
         
@@ -266,7 +266,7 @@ session_regenerate_id(true);
         exit();
     }
     
-    // Handle admin unassignment
+    // Admin unassignment
     if (isset($_POST['unassignAdminButton'])) {
         $userId = intval($_POST['userId']);
         
@@ -368,14 +368,13 @@ if (isset($_POST['deleteUserButton'])) {
     }
     ?>
     
-    <!-- Footer -->
-    <footer class="text-center">
-        <!-- Copyright -->
+   <!-- Footer -->
+   <footer class="text-center">
         <div class="footer p-3">
             © 2024
             <a>Planet Art</a>
+            <a href="privacy-policy.php" class="privacy-policy-link">Privacy Policy</a>
         </div>
-        <!-- Copyright -->
     </footer>
     
     <!-- Bootstrap js and popper.js -->

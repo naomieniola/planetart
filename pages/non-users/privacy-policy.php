@@ -118,16 +118,14 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
         </div>
 
         
-  <!-- Footer -->
-  <footer class="text-center">
-        <!-- Copyright -->
+    <!-- Footer -->
+    <footer class="text-center">
         <div class="footer p-3">
             © 2024
             <a>Planet Art</a>
-            <a href="privacy-policy.php">Privacy Policy</a>
+            <a href="privacy-policy.php" class="privacy-policy-link">Privacy Policy</a>
         </div>
-        <!-- Copyright -->
-  </footer>
+    </footer>
 
     <!-- Bootstrap js and popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
