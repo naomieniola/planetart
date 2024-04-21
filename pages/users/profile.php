@@ -208,81 +208,79 @@ if (isset($_POST["updatePassword"])) {
     <div class="container-fluid" style="position: relative; min-height: 100vh;">
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/planetart/images/mark-ps.png'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 1; z-index: -1;"></div>
             <div class="container-fluid d-flex justify-content-center align-items-center" style="min-height: 100vh; padding-top: 50px; padding-bottom: 50px;">
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h2 class="card-title mb-4">Update Profile</h2>
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h2 class="card-title mb-4">Update Profile</h2>
 
-                        <?php if (isset($_SESSION["success_message"])) : ?>
-                            <div class="alert alert-success"><?php echo $_SESSION["success_message"]; ?></div>
-                            <?php unset($_SESSION["success_message"]); ?>
-                        <?php endif; ?>
+                                    <?php if (isset($_SESSION["success_message"])) : ?>
+                                        <div class="alert alert-success"><?php echo $_SESSION["success_message"]; ?></div>
+                                        <?php unset($_SESSION["success_message"]); ?>
+                                    <?php endif; ?>
 
-                        <?php foreach ($errorMessages as $error) : ?>
-                            <div class="alert alert-danger"><?php echo $error; ?></div>
-                        <?php endforeach; ?>
-                        
-                        <form action="profile.php" method="post" onsubmit="return confirmAccountDeletion(event)">
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $user['email']; ?>" required>
-                                    <button type="submit" name="updateEmail" class="btn btn-outline-primary login btn-sm">Update Email</button>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="fullname" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="fullname" name="fullname" value="<?php echo $user['full_name']; ?>" required>
-                                    <button type="submit" name="updateFullname" class="btn btn-outline-primary login btn-sm">Update Full Name</button>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="username" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="username" name="username" value="<?php echo $user['username']; ?>" required>
-                                    <button type="submit" name="updateUsername" class="btn btn-outline-primary login btn-sm">Update Username</button>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">New Password</label>
-                                    <input type="password" class="form-control" id="password" name="password">
-                                    <div class="form-text">Leave blank to keep the current password.</div>
-                                    <button type="submit" name="updatePassword" class="btn btn-outline-primary login btn-sm">Update Password</button>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="profilePicture" class="form-label">Choose a Profile Picture</label>
-                                    <div class="mb-3">
-                                        <label class="me-3">
-                                            <input type="radio" name="profilePicture" value="profile-user-pink.png" <?php if ($user['profile_picture'] == 'profile-user-pink.png') echo 'checked'; ?>>
-                                            <img src="/planetart/images/profile-user-pink.png" alt="Profile Picture 1" width="35" height="35">
-                                        </label>
-                                        <label class="me-3">
-                                            <input type="radio" name="profilePicture" value="profile-user-green.png" <?php if ($user['profile_picture'] == 'profile-user-green.png') echo 'checked'; ?>>
-                                            <img src="/planetart/images/profile-user-green.png" alt="Profile Picture 2" width="35" height="35">
-                                        </label>
-                                        <label class="me-3">
-                                            <input type="radio" name="profilePicture" value="profile-user-blue.png" <?php if ($user['profile_picture'] == 'profile-user-blue.png') echo 'checked'; ?>>
-                                            <img src="/planetart/images/profile-user-blue.png" alt="Profile Picture 3" width="35" height="35">
-                                        </label>
-                                        <label class="me-3">
-                                            <input type="radio" name="profilePicture" value="profile-user-black.png" <?php if ($user['profile_picture'] == 'profile-user-black.png') echo 'checked'; ?>>
-                                            <img src="/planetart/images/profile-user-black.png" alt="Profile Picture "4 width="35" height="35">
-                                        </label>
+                                    <?php foreach ($errorMessages as $error) : ?>
+                                        <div class="alert alert-danger"><?php echo $error; ?></div>
+                                    <?php endforeach; ?>
+                                    
+                                    <form action="profile.php" method="post" onsubmit="return confirmAccountDeletion(event)">
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="email" name="email" value="<?php echo $user['email']; ?>" required>
+                                                <button type="submit" name="updateEmail" class="btn btn-outline-primary login btn-sm">Update Email</button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="fullname" class="form-label">Full Name</label>
+                                                <input type="text" class="form-control" id="fullname" name="fullname" value="<?php echo $user['full_name']; ?>" required>
+                                                <button type="submit" name="updateFullname" class="btn btn-outline-primary login btn-sm">Update Full Name</button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label">Username</label>
+                                                <input type="text" class="form-control" id="username" name="username" value="<?php echo $user['username']; ?>" required>
+                                                <button type="submit" name="updateUsername" class="btn btn-outline-primary login btn-sm">Update Username</button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="password" class="form-label">New Password</label>
+                                                <input type="password" class="form-control" id="password" name="password">
+                                                <div class="form-text">Leave blank to keep the current password.</div>
+                                                <button type="submit" name="updatePassword" class="btn btn-outline-primary login btn-sm">Update Password</button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="profilePicture" class="form-label">Choose a Profile Picture</label>
+                                                <div class="mb-3">
+                                                    <label class="me-3">
+                                                        <input type="radio" name="profilePicture" value="profile-user-pink.png" <?php if ($user['profile_picture'] == 'profile-user-pink.png') echo 'checked'; ?>>
+                                                        <img src="/planetart/images/profile-user-pink.png" alt="Profile Picture 1" width="35" height="35">
+                                                    </label>
+                                                    <label class="me-3">
+                                                        <input type="radio" name="profilePicture" value="profile-user-green.png" <?php if ($user['profile_picture'] == 'profile-user-green.png') echo 'checked'; ?>>
+                                                        <img src="/planetart/images/profile-user-green.png" alt="Profile Picture 2" width="35" height="35">
+                                                    </label>
+                                                    <label class="me-3">
+                                                        <input type="radio" name="profilePicture" value="profile-user-blue.png" <?php if ($user['profile_picture'] == 'profile-user-blue.png') echo 'checked'; ?>>
+                                                        <img src="/planetart/images/profile-user-blue.png" alt="Profile Picture 3" width="35" height="35">
+                                                    </label>
+                                                    <label class="me-3">
+                                                        <input type="radio" name="profilePicture" value="profile-user-black.png" <?php if ($user['profile_picture'] == 'profile-user-black.png') echo 'checked'; ?>>
+                                                        <img src="/planetart/images/profile-user-black.png" alt="Profile Picture "4 width="35" height="35">
+                                                    </label>
+                                                </div>
+                                                <button type="submit" name="updateProfilePicture" class="btn btn-outline-primary login">Update Profile Picture</button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <h3>Delete Account</h3>
+                                                <p>Deleting your account is permanent and cannot be undone.</p>
+                                                <button type="submit" name="deleteAccount" class="btn btn-danger">Delete Account</button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <button type="submit" name="updateProfilePicture" class="btn btn-outline-primary login">Update Profile Picture</button>
                                 </div>
-                                <div class="mb-3">
-                                    <h3>Delete Account</h3>
-                                    <p>Deleting your account is permanent and cannot be undone.</p>
-                                    <button type="submit" name="deleteAccount" class="btn btn-danger">Delete Account</button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-                        </div>
-
 
     <!-- Footer -->
     <footer class="text-center">
