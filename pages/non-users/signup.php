@@ -31,7 +31,6 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="icon" href="/planetart/images/favicon_io/favicon-32x32.png" type="image/x-icon">
-    <script src="/planetart/script/script.js"></script>
 </head>
 
 <body>

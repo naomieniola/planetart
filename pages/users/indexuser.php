@@ -250,7 +250,7 @@ session_regenerate_id(true);
                         echo '<div class="post-card">';
                         echo '<h4>' . htmlspecialchars($discussion['discussion_topic']) . '</h4>';
                         echo '<p>' . htmlspecialchars(substr($discussion['thoughts'], 0, 100)) . '...</p>';
-                        echo '<a href="?redirect=discussionsuser&view_discussion_id=' . $discussion['id'] . '" class="btn btn-outline-primary login">Read More</a>';
+                        echo '<a href="discussionsuser.php?view_discussion_id=' . $discussion['id'] . '" class="btn btn-outline-primary login">Read More</a>';
                         echo '</div>';
                         echo '</div>';
                     }

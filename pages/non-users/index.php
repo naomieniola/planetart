@@ -103,7 +103,7 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
                         <div class="card-content">
                             <h5>Music</h5>
                             <p>Immerse yourself in the captivating realm of music and compositions.</p>
-                            <a href="musicians" class="btn btn-outline-light btn-explore">Explore</a>
+                            <a href="#" class="btn btn-outline-light btn-explore">Explore</a>
                         </div>
                     </div>
                 </div>
