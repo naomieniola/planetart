@@ -157,7 +157,7 @@ $stmt->close();
                 <div class="row">
                     <div class="col-12">
                         <p class="explore-main-text">Artists</p>
-                        <p class="explore-sub-text">Lorem ipsum</p>
+                        <p class="explore-sub-text"></p>
                     </div>
                 </div>
             </div>
