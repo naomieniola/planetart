@@ -231,7 +231,7 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
                                                 </div>
 
                                                 <div class="col-md-6 mb-3">
-                                                    <label for="fullname" class="form-label">Full Name <span class="required-asterisk">*</span></label>
+                                                    <label for="fullname" class="form-label">First Name<span class="required-asterisk">*</span></label>
                                                     <input type="text" class="form-control" id="fullname" name="fullname">
                                                 </div>
 

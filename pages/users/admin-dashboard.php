@@ -162,7 +162,7 @@ session_regenerate_id(true);
                         echo '<thead>';
                         echo '<tr>';
                         echo '<th>Username</th>';
-                        echo '<th>Full Name</th>';
+                        echo '<th>First Name</th>';
                         echo '<th>Admin Status</th>';
                         echo '<th>Actions</th>';
                         echo '</tr>';

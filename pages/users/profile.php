@@ -56,9 +56,10 @@ if (isset($_POST["updateProfile"])) {
         $stmt = mysqli_prepare($conn, $updateQuery);
         mysqli_stmt_bind_param($stmt, "ss", $fullname, $currentUser);
         mysqli_stmt_execute($stmt);
-        $successMessages[] = "Full name successfully updated.";
+        $_SESSION["user_fullname"] = $fullname; // Update the user's full name in the session
+        $successMessages[] = "First name successfully updated.";
     } elseif (empty($fullname)) {
-        $errorMessages[] = "Full name cannot be empty";
+        $errorMessages[] = "First name cannot be empty";
     }
 
     // Update username
@@ -111,11 +112,6 @@ if (isset($_POST["updateProfile"])) {
         mysqli_stmt_bind_param($stmt, "ss", $profilePicture, $currentUser);
         mysqli_stmt_execute($stmt);
         $successMessages[] = "Profile picture successfully updated.";
-    }
-
-    if (empty($errorMessages)) {
-        header("Location: profile.php");
-        exit();
     }
 }
 
@@ -213,7 +209,7 @@ if (isset($_POST["deleteAccount"])) {
                                         <input type="email" class="form-control" id="email" name="email" value="<?php echo $user['email']; ?>" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="fullname" class="form-label">Full Name</label>
+                                        <label for="fullname" class="form-label">First Name</label>
                                         <input type="text" class="form-control" id="fullname" name="fullname" value="<?php echo $user['full_name']; ?>" required>
                                     </div>
                                     <div class="mb-3">
