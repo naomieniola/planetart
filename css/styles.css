@@ -287,6 +287,13 @@ footer {
     padding: 5px;
     }
 
+.artist-name-my-likes {
+    color: #fff;
+    height: 35% !important;
+    border-radius: 5px;
+    padding: 5px;
+    }
+
 .like-button {
     background-color: transparent;
     border: none;

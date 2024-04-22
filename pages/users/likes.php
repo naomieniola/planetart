@@ -163,7 +163,7 @@ exit();
                 <?php $counter = 0; ?>
                     <?php foreach ($likedItems as $item): ?>
                         <div class="col-md-3 mb-4">
-                            <div class="artist-name">
+                            <div class="artist-name-my-likes">
                                 <a href="#">
                                     <img src="<?php echo $item['image_url']; ?>" class="img-fluid" style="width: 100%; height: 222px">
                                 </a>
