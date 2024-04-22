@@ -161,19 +161,20 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
 
                     if (count($errors) == 0) {
                         $dateofbirth = $dateofbirthYear . '-' . $dateofbirthMonth . '-' . $dateofbirthDay;
-
-                        $sql = "INSERT INTO users (email, full_name, username, password, date_of_birth) VALUES (?, ?, ?, ?, ?)";
+                    
+                        $sql = "INSERT INTO users (email, full_name, username, password, date_of_birth, profile_picture) VALUES (?, ?, ?, ?, ?, ?)";
                         $stmt = mysqli_stmt_init($conn);
                         $prepareStmt = mysqli_stmt_prepare($stmt, $sql);
-                        
+                    
                         if ($prepareStmt) {
-                            mysqli_stmt_bind_param($stmt, "sssss", $email, $fullname, $username, $passwordhash, $dateofbirth);
+                            $defaultProfilePicture = 'default-user.png';
+                            mysqli_stmt_bind_param($stmt, "ssssss", $email, $fullname, $username, $passwordhash, $dateofbirth, $defaultProfilePicture);
                             mysqli_stmt_execute($stmt);
-
+                    
                             $_SESSION["user"] = $username;
                             $_SESSION["user_fullname"] = $fullname;
                             $_SESSION["user_id"] = mysqli_insert_id($conn);
-                            
+                    
                             header("Location: /planetart/pages/users/indexuser.php");
                             exit();
                         } else {

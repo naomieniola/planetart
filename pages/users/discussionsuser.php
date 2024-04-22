@@ -470,11 +470,11 @@ if (!empty($searchKeyword)) {
                                 }
 
                                 // Fetch and display existing comments for the discussion in ascending order
-                                $sqlFetchComments = "SELECT c.*, u.profile_picture 
+                                $sqlFetchComments = "SELECT c.*, u.profile_picture
                                 FROM comments c
                                 JOIN users u ON c.user_fullname = u.full_name
                                 WHERE c.discussion_id = ?
-                                ORDER BY c.created_at ASC";                        
+                                ORDER BY c.created_at ASC";           
                                 
                                 $stmtFetchComments = mysqli_stmt_init($conn);
 
@@ -496,8 +496,6 @@ if (!empty($searchKeyword)) {
                                             echo '<br>';
                                             echo htmlspecialchars($comment['comment_text']);
                                             echo '</p>';
-
-                                        
                                             {
                                                 // Display the comment text normally
                                             }

@@ -56,7 +56,7 @@ if (isset($_POST["login"])) {
         $errorMessage = "Cannot leave blank.";
     } else {
         // Query the database with either email or username
-        $sql = "SELECT * FROM users WHERE email = '$emailOrUsername' OR username = '$emailOrUsername'";
+        $sql = "SELECT *, IFNULL(profile_picture, 'default-user.png') AS profile_picture FROM users WHERE email = '$emailOrUsername' OR username = '$emailOrUsername'";
         $result = mysqli_query($conn, $sql);
         $user = mysqli_fetch_assoc($result);
 
@@ -66,6 +66,7 @@ if (isset($_POST["login"])) {
             $_SESSION["user_fullname"] = $user["full_name"];
             $_SESSION["user_id"] = $user["id"];
             $_SESSION["admin"] = ($user["admin"] == 1) ? 1 : 0;
+            $_SESSION["user_profile_picture"] = $user["profile_picture"];
         
             // "Remember Me" functionality
             if ($rememberMe) {

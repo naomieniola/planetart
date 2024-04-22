@@ -281,9 +281,13 @@ session_regenerate_id(true);
         exit();
     }
     
-    // Handle comment deletion
+    // Comment deletion
     if (isset($_POST['deleteCommentButton'])) {
         $deleteCommentId = intval($_POST['deleteCommentId']);
+
+        // Display a confirmation alert using JavaScript
+        echo '<script type="text/javascript">';
+        echo 'if (confirm("Are you sure you want to delete this comment?")) {';
         
         // Delete the comment from the comments table
         $sqlDeleteComment = "DELETE FROM comments WHERE id = ?";
@@ -298,13 +302,12 @@ session_regenerate_id(true);
         mysqli_stmt_execute($stmtDeleteReport);
         
         // Refresh the page after deletion
-        ob_end_flush();
         header("Location: " . $_SERVER['PHP_SELF']);
         exit();
     }
     
-  // Handle user deletion
-if (isset($_POST['deleteUserButton'])) {
+  // User deletion
+    if (isset($_POST['deleteUserButton'])) {
     $deleteUserFullname = $_POST['deleteUserFullname'];
     
     // Display a confirmation alert using JavaScript

@@ -7,6 +7,6 @@ $dbName = "login_signup";
 $conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
 
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    die("Connection failed. Database not connecting: " . mysqli_connect_error());
 }
 
