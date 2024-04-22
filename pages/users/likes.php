@@ -163,14 +163,16 @@ exit();
                 <?php $counter = 0; ?>
                     <?php foreach ($likedItems as $item): ?>
                         <div class="col-md-3 mb-4">
-                            <div class="artist-name-my-likes">
-                                <a href="#">
-                                    <img src="<?php echo $item['image_url']; ?>" class="img-fluid" style="width: 100%; height: 222px">
-                                </a>
-                                <p class="bottom-left-text"><?php echo $item['item_name']; ?></p>
-                                <button class="like-button liked" data-id="<?php echo $item['item_id']; ?>" data-name="<?php echo $item['item_name']; ?>">
-                                    <img src="/planetart/images/like.png" alt="Like">
-                                </button>
+                            <div class="artist-info-likes">
+                                <div class="artist-name">
+                                    <a href="#">
+                                        <img src="<?php echo $item['image_url']; ?>" class="img-fluid" style="width: 100%; height: 222px">
+                                    </a>
+                                    <p class=""><?php echo $item['item_name']; ?></p>
+                                    <button class="like-button liked" data-id="<?php echo $item['item_id']; ?>" data-name="<?php echo $item['item_name']; ?>">
+                                        <img src="/planetart/images/like.png" alt="Like">
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     <?php $counter++; ?>
