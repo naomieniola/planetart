@@ -128,9 +128,10 @@ footer {
 }
 
 .dropdown-item:active {
-    background-color: #FC8EAC !important;
+    background-color: #A9A9A9 !important;
     color: #fff !important;
 }
+
 /* footer background colour */
 .footer {
     background-color: #fff;
@@ -559,13 +560,17 @@ footer {
 }
 
 .discussion-body {
-    box-shadow: 0 2px 5px #0000001a; 
-    border-radius: 5px;
+    border-radius: 10px; /* border-radius to make images round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important; /* shadow effect */
+    transition: box-shadow 0.3s ease !important; /* transition for smooth hover effect */
     margin-top: 50px !important; /* margin-top to create space between the header and discussion-body */
     padding: 20px;
     background-color: #fff;
 }
 
+.discussion-body:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* shadow on hover */
+}
 .username-discussion {
     font-size: 16px;
 }
@@ -595,11 +600,16 @@ footer {
 
 /* comment box around each comment */
 .comment-box {
+    border-radius: 10px; /* border-radius to make images round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important; /* shadow effect */
+    transition: box-shadow 0.3s ease !important; /* transition for smooth hover effect */
     background-color: #fff !important;
-    border-radius: 8px !important;
     padding: 20px !important;
     margin-bottom: 20px !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.comment-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* shadow on hover */
 }
 
 .comment-content {
@@ -944,13 +954,18 @@ footer {
 
     /* comment area discussion-box */
     .discussion-box {
+        border-radius: 10px; /* border-radius to make images round */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important; /* shadow effect */
+        transition: 0.3s ease !important; /* transition for smooth hover effect */
         background-color: #fff !important;
-        border-radius: 8px !important;
         padding: 20px !important;
         margin-bottom: 20px !important;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     }
     
+    .discussion-box:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* shadow on hover */
+    }
+
     .discussion-title {
         font-size: 24px;
         font-weight: bold;

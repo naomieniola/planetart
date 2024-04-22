@@ -36,10 +36,10 @@ session_regenerate_id(true);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planet Art | Home </title>
-    <link rel="stylesheet" href="/planetart/css/explore-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
     <link rel="stylesheet" href="/planetart/css/index-user-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-
     <link rel="icon" href="/planetart/images/favicon_io/favicon-32x32.png" type="image/x-icon">
 </head>
 
@@ -71,27 +71,27 @@ session_regenerate_id(true);
             <a class="btn btn-outline-secondary nav-links" href="discussionsuser.php">Discussions</a>
         </div>
 
-        <div class="ml-auto">
-                <!-- Welcome message -->
-                <?php if (isset($_SESSION['user_fullname'])) : ?>
-                    <p class="welcome-message">Welcome, <?php echo $_SESSION['user_fullname']; ?>!</p>
-                <?php endif; ?>
+            <div class="ml-auto d-flex align-items-center">
+            <!-- Welcome message -->
+            <?php if (isset($_SESSION['user_fullname'])) : ?>
+                <p class="welcome-message mb-0 me-3">Welcome, <?php echo $_SESSION['user_fullname']; ?>!</p>
+            <?php endif; ?>
 
             <!-- Account button with dropdown -->
-                <div class="btn-group">
-                    <button type="button" class="btn btn-outline-primary login rounded-right" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Account
-                    </button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary login rounded-right" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account
+                </button>
 
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="profile.php">Profile</a>
-                            <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="likes.php">My Likes</a>
-                                    <div class="dropdown-divider"></div>
-                                    <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] == 1) : ?>
-                                <a class="dropdown-item" href="admin-dashboard.php">Admin Dashboard</a>
-                            <div class="dropdown-divider"></div>
-                        <?php endif; ?>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.php">Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="likes.php">My Likes</a>
+                    <div class="dropdown-divider"></div>
+                    <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] == 1) : ?>
+                        <a class="dropdown-item" href="admin-dashboard.php">Admin Dashboard</a>
+                        <div class="dropdown-divider"></div>
+                    <?php endif; ?>
                     <a class="dropdown-item" href="?logout=1">Logout</a>
                 </div>
             </div>

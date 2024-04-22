@@ -49,6 +49,22 @@ footer {
     margin-bottom: 5px;
 }
 
+.welcome-message {
+    margin-right: 10px; 
+    margin-bottom: 0;  /* remove unwanted bottom margin */
+    font-size: 18px !important;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+.dropdown-item:active {
+    background-color: #A9A9A9 !important;
+    color: #fff !important;
+}
+
 .btn-outline-secondary {
     border: none !important;
     color: #000 !important;

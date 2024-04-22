@@ -137,7 +137,7 @@ session_regenerate_id(true);
                     <div class="input-group">
                         <input type="text" class="form-control" name="searchUser" placeholder="Search user by username to assign/unassign admin. Click 'Search' to view all admins.">
                         <div class="input-group-append">
-                            <button type="submit" class="btn btn-primary" name="searchButton">Search</button>
+                            <button type="submit" class="btn btn btn-view-discussion" name="searchButton">Search</button>
                             <?php if (isset($_POST['searchButton'])) : ?>
                                 <button type="submit" class="btn btn-secondary" name="closeButton">Close</button>
                             <?php endif; ?>
