@@ -77,11 +77,12 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
     </header>
 
     <!-- Main Content Container -->
+    <div class="background-colour">
         <div class="container explore-desc">
             <div class="row">
                 <div class="col-12">
                     <p class="explore-main-text">Artists</p>
-                    <p class="explore-sub-text">Lorem ipsum</p>
+                    <p class="explore-sub-text"></p>
                 </div>
             </div>
         </div>
@@ -89,7 +90,7 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
         
         <div class="container mt-5">
         <!-- First Row -->
-        <div class="row">
+        <div class="row mt-3">
             <div class="col medium-column">
                 <div class="position-relative">
                     <a href="vincent-van-gogh.php">
@@ -118,11 +119,11 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
             </div>
             <div class="col medium-column">
                 <div class="position-relative">
-                    <a href="banksy.php">
-                        <img src="/planetart/images/banksy.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                    <a href="#.php">
+                        <img src="/planetart/images/tylor1.jpg" class="img-fluid" style="width: 100%; height: 222px">
                     </a>
                     <div class="artist-info">
-                        <p class="artist-name">Banksy</p>
+                        <p class="artist-name">Tylor Hurd</p>
                         <button class="like-button" data-id="5" data-name="Banksy">
                             <img src="/planetart/images/unlike.png" alt="Like">
                         </button>
@@ -131,172 +132,135 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'discussionsuser') {
             </div>
             <div class="col medium-column">
                 <div class="position-relative">
-                    <a href="leonardo-da-vinci.php">
-                        <img src="/planetart/images/leonardo.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                    <a href=".php">
+                        <img src="/planetart/images/mark.jpg" class="img-fluid" style="width: 100%; height: 222px">
                     </a>
                     <div class="artist-info">
-                        <p class="artist-name">Leonardo da Vinci</p>
+                        <p class="artist-name">Mark Ryden</p>
                         <button class="like-button" data-id="6" data-name="Leonardo da Vinci">
                             <img src="/planetart/images/unlike.png" alt="Like">
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="michelangelo.php">
-                        <img src="/planetart/images/michelangelo.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Michelangelo</p>
-                        <button class="like-button" data-id="7" data-name="Michelangelo">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            
 
-        <!-- Second Row -->
-        <div class="row mt-3">
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="pablo-picasso.php">
-                        <img src="/planetart/images/picasso.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Pablo Picasso</p>
-                        <button class="like-button" data-id="8" data-name="Pablo Picasso">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
+            <!-- Second Row -->
+            <div class="row mt-3">
+                <div class="col medium-column">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img src="/planetart/images/chasbg.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                            </a>
+                            <div class="artist-info">
+                                <p class="artist-name">Chas</p>
+                                <button class="like-button" data-id="7" data-name="Michelangelo">
+                                    <img src="/planetart/images/unlike.png" alt="Like">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col medium-column">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img src="/planetart/images/landon.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                            </a>
+                            <div class="artist-info">
+                                <p class="artist-name">Landon Khiry</p>
+                                <button class="like-button" data-id="9" data-name="Raphael">
+                                    <img src="/planetart/images/unlike.png" alt="Like">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col medium-column">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img src="/planetart/images/schatzi.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                            </a>
+                            <div class="artist-info">
+                                <p class="artist-name">Schatzi</p>
+                                <button class="like-button" data-id="10" data-name="Rembrandt">
+                                    <img src="/planetart/images/unlike.png" alt="Like">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col medium-column">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img src="/planetart/images/lisbeth.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                            </a>
+                            <div class="artist-info">
+                                <p class="artist-name">Lisbeth</p>
+                                <button class="like-button" data-id="8" data-name="Pablo Picasso">
+                                    <img src="/planetart/images/unlike.png" alt="Like">
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="raphael.php">
-                        <img src="/planetart/images/raphael.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Raphael</p>
-                        <button class="like-button" data-id="9" data-name="Raphael">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="rembrandt.php">
-                        <img src="/planetart/images/rembrandt.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Rembrandt</p>
-                        <button class="like-button" data-id="10" data-name="Rembrandt">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="salvador-dali.php">
-                        <img src="/planetart/images/dali.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Salvador Dali</p>
-                        <button class="like-button" data-id="11" data-name="Salvador Dali">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="claude-monet.php">
-                        <img src="/planetart/images/monet.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Claude Monet</p>
-                        <button class="like-button" data-id="12" data-name="Claude Monet">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Third Row -->
-        <div class="row mt-3">
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="johannes-vermeer.php">
-                        <img src="/planetart/images/vermeer.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Johannes Vermeer</p>
-                        <button class="like-button" data-id="13" data-name="Johannes Vermeer">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="caravaggio.php">
-                        <img src="/planetart/images/caravaggio.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Caravaggio</p>
-                        <button class="like-button" data-id="14" data-name="Caravaggio">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="johannes-vermeer.php">
-                        <img src="/planetart/images/vermeer2.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Johannes Vermeer</p>
-                        <button class="like-button" data-id="15" data-name="Johannes Vermeer">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="michelangelo.php">
-                        <img src="/planetart/images/michelangelo2.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Michelangelo</p>
-                        <button class="like-button" data-id="16" data-name="Michelangelo">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col medium-column">
-                <div class="position-relative">
-                    <a href="frida-kahlo.php">
-                        <img src="/planetart/images/kahlo.jpg" class="img-fluid" style="width: 100%; height: 222px">
-                    </a>
-                    <div class="artist-info">
-                        <p class="artist-name">Frida Kahlo</p>
-                        <button class="like-button" data-id="17" data-name="Frida Kahlo">
-                            <img src="/planetart/images/unlike.png" alt="Like">
-                        </button>
+                        
+                    <!-- Third Row -->
+                    <div class="row mt-3">
+                        <div class="col medium-column">
+                            <div class="position-relative">
+                                <a href="#">
+                                    <img src="/planetart/images/helen-katherine.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                                </a>
+                                <div class="artist-info">
+                                    <p class="artist-name">Helen Katherine</p>
+                                    <button class="like-button" data-id="13" data-name="Johannes Vermeer">
+                                        <img src="/planetart/images/unlike.png" alt="Like">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col medium-column">
+                            <div class="position-relative">
+                                <a href="caravaggio.php">
+                                    <img src="/planetart/images/gabe-weis.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                                </a>
+                                <div class="artist-info">
+                                    <p class="artist-name">Gabe Weis</p>
+                                    <button class="like-button" data-id="14" data-name="Caravaggio">
+                                        <img src="/planetart/images/unlike.png" alt="Like">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="col medium-column">
+                            <div class="position-relative">
+                                <a href="#">
+                                    <img src="/planetart/images/soulo.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                                </a>
+                                <div class="artist-info">
+                                    <p class="artist-name">Soulo</p>
+                                    <button class="like-button" data-id="11" data-name="Salvador Dali">
+                                        <img src="/planetart/images/unlike.png" alt="Like">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col medium-column">
+                        <div class="position-relative">
+                            <a href="#">
+                                <img src="/planetart/images/isaiah.jpg" class="img-fluid" style="width: 100%; height: 222px">
+                            </a>
+                            <div class="artist-info">
+                                <p class="artist-name">Isaiah</p>
+                                <button class="like-button" data-id="12" data-name="Claude Monet">
+                                    <img src="/planetart/images/unlike.png" alt="Like">
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-        <!-- Footer -->
+
+            <!-- Footer -->
         <footer class="text-center">
             <div class="footer p-3">
                 © 2024
